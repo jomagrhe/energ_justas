@@ -1,0 +1,411 @@
+/* Fuente y reset */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #202123;
+  color: #d1d5db;
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #202123;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-img {
+  height: auto;
+  max-height: 50px;      
+  max-width: 180px;
+  object-fit: contain;
+}
+
+.centered-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+/* Navbar enlaces */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #4caf50 !important;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding-top: 80px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
+  width: calc(100% - 2rem);
+  margin: 1rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: image-set(
+    url('Recursos/energia.png')
+  );
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeInHero 1.5s forwards;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  padding: 0 4rem;
+  text-shadow:
+   0 4px 1px rgba(0, 0, 0, 0.7), 
+   0 8px 5px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  box-sizing: border-box;
+}
+
+@keyframes fadeInHero {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Transición suave al hacer scroll */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+  .hero {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Tarjetas de energía */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #202123; 
+  transition: 0.4s ease-in-out;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(220px, 100%);
+  padding: 1rem;
+  background: #202123;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #d1d5db;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  background-color: #1e1f25; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #e5e7eb; 
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: brightness(1.2); /* mantiene verde vibrante */
+}
+
+.service-item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #d1d5db;
+}
+
+/* Sección "Sobre Nosotros" */
+.join {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: #202123;
+}
+
+.join-text {
+  flex: 1 1 300px;
+  color: #d1d5db;
+}
+
+.join-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+.join-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.join-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.join-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Seccion "Unirse" */
+.form-section {
+  user-select: none;
+  padding: 2rem;
+  background-color: #202123;
+}
+
+.form-details {
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #1e1f25;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-details:hover {
+  transform: translateY(-4px);
+  background-color: #25262c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-summary {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #4caf50;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.form-content label {
+  color: #d1d5db;
+  font-size: 1rem;
+}
+
+.form-content input {
+  background-color: #2a2b30;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  color: #e5e7eb;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-content input:focus {
+  outline: none;
+  border-color: #81c784;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+}
+
+.form-content button {
+  background-color: transparent;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-content button:hover {
+  background-color: #4caf50;
+  color: #1e1f25;
+}
+
+/* Estilos de sección de video desplegable */
+.video-section {
+  user-select: none;
+  padding: 2rem;
+  background-color: #202123;
+}
+
+.video-details {
+  box-sizing: border-box;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #1e1f25;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.video-details:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #25262c; /* puedes ajustar tonito */
+  /* el borde verde permanece igual, rodeando la caja resaltada */
+}
+
+.video-summary {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4caf50;
+  cursor: pointer;
+  list-style: none;
+}
+
+.video-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.video-text {
+  flex: 1 1 40%;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.video-embed {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.video-embed iframe {
+  border: none;
+  border-radius: 12px; /* si quieres redondear solo el video */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .video-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-text, .video-embed {
+    flex: 1 1 100%;
+  }
+
+  .video-embed iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.joinus{
+  font-weight: bold;
+  font-size: large;
+}
+/*Dar negrita y estilo al label*/
+.input-group-text{
+  font-weight: bold;
+  color: #4caf50;
+}
+/*Estilo de fecha*/
+#fecha {
+  font-family: 'Montserrat', sans-serif;
+  color: #4caf50;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 10px 20px;
+  text-align: center;
+  opacity: 0.85;
+}
+/* Pie de página */
+footer {
+  background-color: #297c29;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

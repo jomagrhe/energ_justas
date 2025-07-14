@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto Ecología Justa</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Font Awesome CDN (v6.x) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container position-relative">
+      <!-- Menú izquierdo -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active tab-link" href="#hero">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link tab-link" href="#serv">Servicios</a>
+        </li>
+      </ul>
+
+      <!-- Logo centrado -->
+    <a class="navbar-brand centered-logo" href="#">
+      <img src="Recursos/Logo EcoJusta.png" alt="EcoJusta" class="logo-img" />
+    </a>
+      <!-- Menú derecho -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link tab-link" href="#formulario">Unirse</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section id="hero" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    Energías Limpias y Justas para Todos
+  </div>
+  <p id="serv"></p>
+</section>
+<section id="services" class="services">
+  <!-- Tarjetas -->
+  <a href="Energias_solar/EnergiaSolar.html" class="service-item">
+    <img src="img/solar-panel.png" alt="Solar Panel" />
+    <h3>Energía Solar</h3>
+    <p>Promovemos el uso de energía solar limpia y accesible.</p>
+  </a>
+  <a href="Energia_eolica/EnergiaEolica.html" class="service-item">
+    <img src="img/wind-turbine.png" alt="Wind Turbine" />
+    <h3>Energía Eólica</h3>
+    <p>Impulsamos parques eólicos para un futuro sostenible.</p>
+  </a>
+  <a href="Energia_hidrica/EnergiaHidrica.html" class="service-item">
+    <img src="img/water.png" alt="Hydroelectric Power" />
+    <h3>Energía Hídrica</h3>
+    <p>Apoyamos la generación limpia a través del agua.</p>
+  </a>
+  <a href="Energia_sostenible/EnergiaSostenible.html" class="service-item">
+    <img src="img/leaf.png" alt="Sustainability" />
+    <h3>Sostenibilidad</h3>
+    <p>Fomentamos prácticas ecológicas y responsables.</p>
+  </a>
+</section>
+<!-- Video desplegable -->
+<section class="video-section container">
+  <details class="video-details">
+    <summary class="video-summary">
+      <i class="fas fa-play"> </i> Ver video
+    </summary>
+    <div class="video-flex">
+      <div class="video-text">
+        <p>Conoce cómo podemos avanzar hacia una transición energética justa, sostenible y equitativa para todas las comunidades.</p>
+      </div>
+      <div class="video-embed">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/eRXY4pnLhmI?si=Ls8uzhFz8gHrCs_j" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </details>
+</section>
+<!-- Seccion Sobre Nosotros -->
+<section id="join" class="join">
+  <div class="join-text">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una organización dedicada a promover energías justas, limpias y accesibles, comprometidos con el medio ambiente y la comunidad.</p>
+  </div>
+  
+  <div class="join-img">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Sostenibilidad" />
+  </div>
+
+</section>
+<!-- Sección Formulario "Unirse a nosotros" -->
+ <p id="formulario"></p>
+<section class="form-section container">
+  <details class="form-details">
+    <summary class="form-summary">
+      <i class="fas fa-user-plus"></i> Únete a nosotros
+    </summary>
+
+    <form class="form-content">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" placeholder="Ej. Ana Torres" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" placeholder="Ej. ana@email.com" required>
+
+      <label for="telefono">Número telefónico</label>
+      <input type="tel" id="telefono" placeholder="Ej. 3123456789" required>
+
+      <button id="enviarBtn" type="submit">Enviar</button>
+    </form>
+  </details>
+</section>
+<br>
+<p id="fecha">Hoy es: </p>
+<footer id="contact" class="bg-success text-white text-center p-3">
+  <p>© 2025 EcoJusta. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

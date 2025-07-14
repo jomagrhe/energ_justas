@@ -1,0 +1,182 @@
+[
+  {
+    "Country": "Colombia",
+    "Year": 2018,
+    "Total_Energy_GWh": 65000,
+    "Renewable_Energy_GWh": 13000,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": 90000,
+    "Investment_USD_m": 500
+  },
+  {
+    "Country": "Mexico",
+    "Year": 2019,
+    "Total_Energy_GWh": "",
+    "Renewable_Energy_GWh": 20000,
+    "Renewable_Share_percent": "twenty",
+    "CO2_Emissions_kT": 120000,
+    "Investment_USD_m": 700
+  },
+  {
+    "Country": "Brazil",
+    "Year": 2020,
+    "Total_Energy_GWh": 600000,
+    "Renewable_Energy_GWh": -50000,
+    "Renewable_Share_percent": 8.3,
+    "CO2_Emissions_kT": 400000,
+    "Investment_USD_m": 1200
+  },
+  {
+    "Country": "Chile",
+    "Year": 2021,
+    "Total_Energy_GWh": 75000,
+    "Renewable_Energy_GWh": 15000,
+    "Renewable_Share_percent": "20%",
+    "CO2_Emissions_kT": 60000,
+    "Investment_USD_m": 400
+  },
+  {
+    "Country": "Argentina",
+    "Year": "2021-01-01",
+    "Total_Energy_GWh": 55000.5,
+    "Renewable_Energy_GWh": 11000,
+    "Renewable_Share_percent": "twenty point zero",
+    "CO2_Emissions_kT": 80000,
+    "Investment_USD_m": 450
+  },
+  {
+    "Country": "Peru",
+    "Year": 2018,
+    "Total_Energy_GWh": 45000,
+    "Renewable_Energy_GWh": 9000,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": "60,000",
+    "Investment_USD_m": 300
+  },
+  {
+    "Country": "Ecuador",
+    "Year": 2020,
+    "Total_Energy_GWh": "fifty thousand",
+    "Renewable_Energy_GWh": 10000,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": 50000,
+    "Investment_USD_m": 250
+  },
+  {
+    "Country": "Colombia",
+    "Year": 2022,
+    "Total_Energy_GWh": 68000,
+    "Renewable_Energy_GWh": 13600,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": "N/A",
+    "Investment_USD_m": 550
+  },
+  {
+    "Country": "Mexico",
+    "Year": 2022,
+    "Total_Energy_GWh": 270000,
+    "Renewable_Energy_GWh": 54000,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": "",
+    "Investment_USD_m": 800
+  },
+  {
+    "Country": "Brazil",
+    "Year": 2023,
+    "Total_Energy_GWh": 620000,
+    "Renewable_Energy_GWh": 186000,
+    "Renewable_Share_percent": 30,
+    "CO2_Emissions_kT": 380000,
+    "Investment_USD_m": -100
+  },
+  {
+    "Country": "Chile",
+    "Year": 2020,
+    "Total_Energy_GWh": "",
+    "Renewable_Energy_GWh": 15000,
+    "Renewable_Share_percent": "twenty",
+    "CO2_Emissions_kT": 63000,
+    "Investment_USD_m": 500
+  },
+  {
+    "Country": "Argentina",
+    "Year": 2020,
+    "Total_Energy_GWh": 56000,
+    "Renewable_Energy_GWh": 11200,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": 82000,
+    "Investment_USD_m": "four hundred"
+  },
+  {
+    "Country": "Peru",
+    "Year": 2021,
+    "Total_Energy_GWh": 46000,
+    "Renewable_Energy_GWh": 9200,
+    "Renewable_Share_percent": 19.999,
+    "CO2_Emissions_kT": 61000,
+    "Investment_USD_m": 310
+  },
+  {
+    "Country": "Ecuador",
+    "Year": 2021,
+    "Total_Energy_GWh": 51000,
+    "Renewable_Energy_GWh": 10200,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": 51000,
+    "Investment_USD_m": 260
+  },
+  {
+    "Country": "Colombia",
+    "Year": 2023,
+    "Total_Energy_GWh": 70000,
+    "Renewable_Energy_GWh": 14000,
+    "Renewable_Share_percent": "twenty-two",
+    "CO2_Emissions_kT": 89000,
+    "Investment_USD_m": 600
+  },
+  {
+    "Country": "Mexico",
+    "Year": "twenty-twenty-three",
+    "Total_Energy_GWh": 275000,
+    "Renewable_Energy_GWh": 50000,
+    "Renewable_Share_percent": 18.18,
+    "CO2_Emissions_kT": 118000,
+    "Investment_USD_m": 820
+  },
+  {
+    "Country": "Brazil",
+    "Year": 2019,
+    "Total_Energy_GWh": 615000,
+    "Renewable_Energy_GWh": 184500,
+    "Renewable_Share_percent": "30%",
+    "CO2_Emissions_kT": 390000,
+    "Investment_USD_m": 1100
+  },
+  {
+    "Country": "Chile",
+    "Year": 2018,
+    "Total_Energy_GWh": 74000,
+    "Renewable_Energy_GWh": 13500,
+    "Renewable_Share_percent": "18,2",
+    "CO2_Emissions_kT": 65000,
+    "Investment_USD_m": 380
+  },
+  {
+    "Country": "Argentina",
+    "Year": 2019,
+    "Total_Energy_GWh": 54000,
+    "Renewable_Energy_GWh": 10000,
+    "Renewable_Share_percent": 18.52,
+    "CO2_Emissions_kT": 81000,
+    "Investment_USD_m": 420
+  },
+  {
+    "Country": "Peru",
+    "Year": 2019,
+    "Total_Energy_GWh": 45500,
+    "Renewable_Energy_GWh": 9100,
+    "Renewable_Share_percent": 20,
+    "CO2_Emissions_kT": 62000,
+    "Investment_USD_m": 295
+  }
+]

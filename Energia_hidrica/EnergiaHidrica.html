@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energía hidroeléctrica</title>
+  <link rel="stylesheet" href="../Energias_solar/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../Energia_eolica/EnergiaEolica.html" class="btn-volver" title="Volver al inicio">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+    <a href="../Energia_sostenible/EnergiaSostenible.html" class="btn-volver" title="Ir a energía sostenible">
+      <h5>Sostenibilidad</h5>
+      <i class="fa-solid fa-leaf"></i>
+    </a>
+  </div>
+
+  <main class="solar-page">
+    <!-- FAQ a la izquierda -->
+    <aside class="faq-sidebar left">
+      <div class="solar-info-box vertical">
+        <h3 class="box-title">Preguntas frecuentes</h3>
+        <div class="faq-item">
+          <div class="faq-icon"><i class="fa-solid fa-droplet"></i></div>
+          <p>¿Cuánta energía produce un generador hidroeléctrico al día?</p>
+          <small>En promedio, entre 50 a 500 kWh.</small>
+        </div>
+        <div class="faq-item">
+          <div class="faq-icon"><i class="fas fa-home"></i></div>
+          <p>¿Cuántas casas alcanzan con un generador hidroeléctrico?</p>
+          <small>
+            <li>Uno de 1 kW: para 1 casa (aprox).</li>
+           <li> Uno de 10 kW: para 10 casas (aprox).</li>
+           <li>Uno de 100 kW: para 100 casas (aprox).</li>
+          </small>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenido central -->
+    <div class="central-content">
+      <section class="join static-section">
+        <div class="join-text">
+          <h2>¿Cómo funciona?</h2>
+          <p>
+           Un generador hidroeléctrico convierte la fuerza del agua en movimiento en electricidad
+            usando una turbina conectada a un generador.
+            Es una energía limpia y renovable.
+
+          </p>
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <div class="slider-container">
+          <!-- Slide 1 -->
+          <div class="slide active" data-slide="1">
+            <h3>Beneficios de la energía hídrica</h3>
+            <ul>
+              <li><strong>Sostenibilidad:</strong> usa el agua, que se repone naturalmente.</li>
+              <li><strong>Ahorro:</strong> bajo costo operativo.</li>
+              <li><strong> Constante:</strong> genera energía día y noche.</li>
+              <li><strong>Limpia:</strong> no emite gases contaminantes.</li>
+            </ul>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide" data-slide="2">
+            <h3>Descúbrelo en acción</h3>
+            <p>
+              Este video muestra cómo la tecnología hidroeléctrica genera energía útil para hogares o negocios.
+            </p>
+            <div class="responsive-iframe-container">
+              <iframe src="https://www.youtube.com/embed/Xx_Lxg4hCjc" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-arrows-container">
+          <button class="slider-arrow left-arrow" aria-label="Anterior">&#10094;</button>
+          <h4 id="moreI">Más información</h4>
+          <button class="slider-arrow right-arrow" aria-label="Siguiente">&#10095;</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Países a la derecha -->
+    <aside class="faq-sidebar right">
+      <div class="solar-info-box vertical">
+        <h3 class="box-title">Países con más energía hidroeléctrica</h3>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-de"></div>
+          <div class="country-name">Paraguay</div>
+          <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
+        </div>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-cn"></div>
+          <div class="country-name">Noruega</div>
+          <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+        </div>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-us"></div>
+          <div class="country-name">Etiopía</div>
+          <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+        </div>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-us"></div>
+          <div class="country-name">Colombia</div>
+          <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+        </div>
+
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Eco Justa. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../Energias_solar/script.js"></script>
+</body>
+</html>

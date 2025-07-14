@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energía Solar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../index.html" class="btn-volver" title="Volver al inicio">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+    <a href="..//Energia_eolica/EnergiaEolica.html" class="btn-volver" title="Ir a energía eólica">
+      <h5>Energía Eólica</h5>
+      <i class="fas fa-wind"></i>
+    </a>
+  </div>
+
+  <main class="solar-page">
+    <!-- FAQ a la izquierda -->
+    <aside class="faq-sidebar left">
+      <div class="solar-info-box vertical">
+        <h3 class="box-title">Preguntas frecuentes</h3>
+        <div class="faq-item">
+          <div class="faq-icon"><i class="fas fa-solar-panel"></i></div>
+          <p>¿Cuánta energía produce un panel solar al día?</p>
+          <small>En promedio, entre 1.5 a 2.5 kWh.</small>
+        </div>
+        <div class="faq-item">
+          <div class="faq-icon"><i class="fas fa-home"></i></div>
+          <p>¿Cuántos paneles se necesitan para una casa?</p>
+          <small>Entre 6 y 12, dependiendo del consumo.</small>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenido central -->
+    <div class="central-content">
+      <section class="join static-section">
+        <div class="join-text">
+          <h2>¿Cómo funciona?</h2>
+          <p>
+            La energía solar convierte la radiación del sol en electricidad aprovechable.
+            Los paneles solares capturan la luz y generan corriente eléctrica. Es silencioso, ecológico y escalable.
+          </p>
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <div class="slider-container">
+          <!-- Slide 1 -->
+          <div class="slide active" data-slide="1">
+            <h3>Beneficios de la energía solar</h3>
+            <ul>
+              <li><strong>Sostenibilidad:</strong> Reduce las emisiones de gases.</li>
+              <li><strong>Ahorro:</strong> Disminuye la factura eléctrica.</li>
+              <li><strong>Autonomía:</strong> Ideal para zonas remotas.</li>
+              <li><strong>Escalabilidad:</strong> Desde casas hasta industrias.</li>
+            </ul>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide" data-slide="2">
+            <h3>Descúbrelo en acción</h3>
+            <p>
+              Este video muestra cómo la tecnología solar transforma la luz del sol en energía útil para hogares o negocios.
+            </p>
+            <div class="responsive-iframe-container">
+              <iframe src="https://www.youtube.com/embed/h20bJDZCaCk" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-arrows-container">
+          <button class="slider-arrow left-arrow" aria-label="Anterior">&#10094;</button>
+          <h4 id="moreI">Más información</h4>
+          <button class="slider-arrow right-arrow" aria-label="Siguiente">&#10095;</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Países a la derecha -->
+    <aside class="faq-sidebar right">
+      <div class="solar-info-box vertical">
+        <h3 class="box-title">Países con más energía solar</h3>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-de"></div>
+          <div class="country-name">Alemania</div>
+          <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+        </div>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-cn"></div>
+          <div class="country-name">China</div>
+          <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+        </div>
+
+        <div class="country-item">
+          <div class="country-icon flag-icon flag-icon-us"></div>
+          <div class="country-name">EE.UU.</div>
+          <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+        </div>
+
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Eco Justa. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

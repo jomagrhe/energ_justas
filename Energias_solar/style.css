@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #202123;
+  color: #d1d5db;
+  scroll-behavior: smooth;
+ 
+}
+
+main.solar-page {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: start;
+  flex: 1 0 auto;  /*para que crezca y ocupe espacio */
+}
+
+.top-bar {
+  padding: 1rem;
+  background-color: #18191c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-volver {
+  color: #4caf50;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.btn-volver:hover {
+  color: #81c784;
+}
+
+/* Recuadros laterales */
+.faq-sidebar {
+  background-color: #202123;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /*height: 100%;
+  min-height: 100%; estaban afectando el comportamiento*/
+}
+
+.faq-sidebar.left {
+  grid-column: 1 / 2;
+}
+
+.faq-sidebar.right {
+  grid-column: 3 / 4;
+}
+
+.box-title {
+  text-align: center;
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* FAQ Items lado izquierdo */
+.faq-sidebar.left .faq-item {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-sidebar.left .faq-item p {
+  color: #4caf50;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.faq-sidebar.left .faq-item small {
+  color: #ffffff;
+}
+
+/* Iconos FAQ */
+.faq-icon {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+/* Países (lado derecho) */
+.faq-sidebar.right .country-item {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.country-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-sidebar.right .country-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #4caf50;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0.3rem auto;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.4s ease-in-out;
+}
+
+.percent-label {
+  font-size: 0.9rem;
+  color: #a3e635;
+}
+
+/* Centro: Cómo funciona */
+.join.static-section {
+  grid-column: 2 / 3;
+  background-color: #1e1f25;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 1.2rem;
+  height: 220px;
+}
+
+.join-text h2 {
+  color: #4caf50;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.join-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Slider */
+.slider-section {
+  grid-column: 2 / 3;
+  background-color: #1e1f25;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+#moreI{
+  color: #4caf50;
+  padding: 12px;
+}
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+.slide.active {
+  display: flex;
+}
+
+.slide h3 {
+  color: #4caf50;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.slide ul {
+  padding-left: 1rem;
+}
+.slide li {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+/* Responsive iframe container */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 0.5rem;
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Flechas debajo del slider, centradas y sin fondo */
+.slider-arrow {
+  position: static;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #4caf50;
+  background: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider-arrow:hover {
+  color: #81c784;
+}
+
+/* Contenedor de flechas centrado */
+.slider-arrows-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Footer sticky */
+.footer {
+  flex-shrink: 0;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive para toda la página */
+@media screen and (max-width: 1024px) {
+  main.solar-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .faq-sidebar {
+    width: 100%;
+    height: auto !important;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  .faq-sidebar.left,
+  .faq-sidebar.right {
+    grid-column: auto;
+  }
+
+  .central-content {
+    width: 100%;
+  }
+
+  .join.static-section,
+  .slider-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .join-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .join-text p {
+    font-size: 1rem;
+  }
+
+  /* Flechas más pequeñas */
+  .slider-arrow {
+    font-size: 1.6rem;
+    margin: 0 0.5rem;
+  }
+
+  /* Ajustes en FAQ y países */
+  .faq-sidebar.left .faq-item p,
+  .faq-sidebar.right .country-name {
+    font-size: 1rem;
+  }
+
+  .faq-sidebar.left .faq-item small {
+    font-size: 0.9rem;
+  }
+
+  .faq-sidebar.right .country-item {
+    margin-bottom: 2rem;
+  }
+}
